@@ -112,11 +112,25 @@ export default function LoginPage() {
         </div>
 
         <div className="login-brand" style={{ marginTop: '20px' }}>
-          <img src="/logo.jpg" alt="Software" className="login-logo" />
+          <div className="login-logo-container" style={{ 
+            width: '72px', 
+            height: '72px', 
+            background: 'linear-gradient(135deg, var(--primary), var(--primary-dark))', 
+            borderRadius: '16px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '0 auto 16px',
+            boxShadow: 'var(--shadow-glow)'
+          }}>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
           <h1 className="login-title">
-            A<span>Q</span>UATECH
+            S<span>O</span>FTWARE
           </h1>
-          <p className="login-tagline">innovación hidráulica</p>
+          <p className="login-tagline">gestión eficiente</p>
         </div>
 
         <div className="login-divider" />

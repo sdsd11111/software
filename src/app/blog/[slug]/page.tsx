@@ -54,8 +54,21 @@ export default async function BlogPostPage({ params }: Props) {
     <div style={{ backgroundColor: 'var(--bg-body)', minHeight: '100vh', color: 'var(--text)' }}>
       <header style={{ padding: '1rem 5%', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--bg-deep)' }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none' }}>
-          <img src="/logo.jpg" alt="Software" style={{ height: '40px', borderRadius: '4px' }} />
-          <span style={{ color: 'var(--text)', fontWeight: 'bold', fontFamily: 'var(--font-brand)', fontSize: '1.2rem' }}>AQUATECH</span>
+          <div style={{ 
+            width: '32px', 
+            height: '32px', 
+            background: 'linear-gradient(135deg, var(--primary), var(--primary-dark))', 
+            borderRadius: '6px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
+          }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <span style={{ color: 'var(--text)', fontWeight: 'bold', fontFamily: 'var(--font-brand)', fontSize: '1.2rem' }}>SOFTWARE</span>
         </Link>
         <nav style={{ marginLeft: 'auto' }}>
           <Link href="/blog" className="btn btn-ghost btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>

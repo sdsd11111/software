@@ -227,7 +227,20 @@ export default function Sidebar() {
     return (
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`}>
         <div className="sidebar-brand">
-          <img src="/logo.jpg" alt="Software" className="sidebar-brand-logo" />
+          <div className="sidebar-brand-icon" style={{ 
+            width: '40px', 
+            height: '40px', 
+            background: 'linear-gradient(135deg, var(--primary), var(--primary-dark))', 
+            borderRadius: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
+          }}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
           <div className="sidebar-brand-text">S<span>O</span>FTWARE</div>
         </div>
         <div style={{ padding: '20px', color: 'var(--text-muted)', fontSize: '0.8rem' }}>Cargando...</div>
@@ -459,7 +472,20 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`}>
         <div className="sidebar-brand">
-          <img src="/logo.jpg" alt="Software" className="sidebar-brand-logo" />
+          <div className="sidebar-brand-icon" style={{ 
+            width: '40px', 
+            height: '40px', 
+            background: 'linear-gradient(135deg, var(--primary), var(--primary-dark))', 
+            borderRadius: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
+          }}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
           <div>
             <div className="sidebar-brand-text">
               S<span>O</span>FTWARE

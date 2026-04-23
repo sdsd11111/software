@@ -48,8 +48,21 @@ export default async function BlogIndexPage({ searchParams }: BlogPageProps) {
     <div style={{ backgroundColor: 'var(--bg-body)', minHeight: '100vh' }}>
       {/* Navbar simplificado */}
       <header style={{ padding: '1rem 5%', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-        <img src="/logo.jpg" alt="Software" style={{ height: '40px', borderRadius: '4px' }} />
-        <Link href="/" style={{ color: 'var(--text)', fontWeight: 'bold', fontFamily: 'var(--font-brand)' }}>AQUATECH</Link>
+        <div style={{ 
+          width: '32px', 
+          height: '32px', 
+          background: 'linear-gradient(135deg, var(--primary), var(--primary-dark))', 
+          borderRadius: '6px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <Link href="/" style={{ color: 'var(--text)', fontWeight: 'bold', fontFamily: 'var(--font-brand)' }}>SOFTWARE</Link>
         <nav style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <Link href="/blog" style={{ color: 'var(--text)', textDecoration: 'none', fontSize: '0.9rem' }}>Artículos</Link>
           <Link href="/admin/login" className="btn btn-primary btn-sm">Portal CRM</Link>
