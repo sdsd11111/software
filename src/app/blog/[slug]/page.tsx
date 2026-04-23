@@ -18,14 +18,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: 'Artículo no encontrado | Aquatech'
+      title: 'Artículo no encontrado | Software'
     };
   }
 
   return {
-    title: `${post.title} | Aquatech Blog`,
+    title: `${post.title} | Software Blog`,
     description: post.metaDescription || post.excerpt || 'Lee más en nuestro blog.',
-    keywords: post.focusKeyword || 'aquatech, tratamiento y mantenimiento de agua',
+    keywords: post.focusKeyword || 'brand, tratamiento y mantenimiento de agua',
     openGraph: {
       type: 'article',
       title: post.title,
@@ -54,7 +54,7 @@ export default async function BlogPostPage({ params }: Props) {
     <div style={{ backgroundColor: 'var(--bg-body)', minHeight: '100vh', color: 'var(--text)' }}>
       <header style={{ padding: '1rem 5%', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--bg-deep)' }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none' }}>
-          <img src="/logo.jpg" alt="Aquatech" style={{ height: '40px', borderRadius: '4px' }} />
+          <img src="/logo.jpg" alt="Software" style={{ height: '40px', borderRadius: '4px' }} />
           <span style={{ color: 'var(--text)', fontWeight: 'bold', fontFamily: 'var(--font-brand)', fontSize: '1.2rem' }}>AQUATECH</span>
         </Link>
         <nav style={{ marginLeft: 'auto' }}>
@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'var(--primary)', color: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
                   {post.author?.name ? post.author.name.substring(0, 2).toUpperCase() : 'AQ'}
                 </div>
-                <span>{post.author?.name || 'Comunicaciones Aquatech'}</span>
+                <span>{post.author?.name || 'Comunicaciones Software'}</span>
               </div>
               <span>•</span>
               <time dateTime={post.publishedAt?.toISOString() || ''}>

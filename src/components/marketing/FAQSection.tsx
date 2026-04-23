@@ -133,7 +133,7 @@ export default function FAQSection({
                 letterSpacing: '0.2em',
                 cursor: 'pointer'
               }}
-              className="hover:bg-aquatech-blue hover:text-white transition-all"
+              className="hover:bg-brand-blue hover:text-white transition-all"
               >
                 Hablar con un Experto
               </button>

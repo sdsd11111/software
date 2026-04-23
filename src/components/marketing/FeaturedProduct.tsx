@@ -8,7 +8,7 @@ export default function FeaturedProduct() {
       <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
         <Image 
           src="https://cesarweb.b-cdn.net/home/pro-product.webp" 
-          alt="Aquatech Pro Banner" 
+          alt="Software Pro Banner" 
           fill
           unoptimized
           className="object-cover object-center"

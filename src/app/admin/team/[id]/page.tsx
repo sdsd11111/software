@@ -386,7 +386,7 @@ export default function TeamMemberPage() {
           </div>
 
           <span>@{member.username}</span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><Mail size={14}/> {member.email || 'correo.pendiente@aquatech.com'}</span>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><Mail size={14}/> {member.email || 'correo.pendiente@brand.com'}</span>
           <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><Phone size={14}/> {member.phone || 'Sin teléfono'}</span>
         </div>
       </div>

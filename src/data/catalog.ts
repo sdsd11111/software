@@ -334,7 +334,7 @@ export const catalogData: Product[] = [
   },
   {
     id: 37,
-    name: "GENERADOR DE OZONO AQUATECH",
+    name: "GENERADOR DE OZONO PREMIUM",
     code: "AQ-AGU-OZO",
     category: 'Agua Potable',
     price: 320.00,

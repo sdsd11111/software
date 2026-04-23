@@ -13,7 +13,7 @@ export interface UploadResult {
 export async function uploadToBunnyClientSide(
   file: File | Blob, 
   originalName: string,
-  folder: string = 'aquatech-crm'
+  folder: string = 'software-gestion'
 ): Promise<UploadResult> {
   // 1. Get secure config from our backend
   const configResp = await fetch('/api/storage/config');

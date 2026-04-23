@@ -81,7 +81,7 @@ export default function QuoteDetailClient({ quote, projects = [] }: any) {
         docType: 'COTIZACIÓN',
         docId: quote.id,
         notes: quote.notes,
-        sellerName: session?.user?.name || quote.creator?.name || 'Aquatech',
+        sellerName: session?.user?.name || quote.creator?.name || 'Software',
         action: 'instance',
         optionalSection: {
           title: quote.optionalTitle || '',
@@ -152,7 +152,7 @@ export default function QuoteDetailClient({ quote, projects = [] }: any) {
       docType: 'COTIZACIÓN',
       docId: quote.id,
       notes: quote.notes,
-      sellerName: session?.user?.name || quote.creator?.name || 'Aquatech',
+      sellerName: session?.user?.name || quote.creator?.name || 'Software',
       optionalSection: {
         title: quote.optionalTitle || '',
         description: quote.optionalDescription || '',

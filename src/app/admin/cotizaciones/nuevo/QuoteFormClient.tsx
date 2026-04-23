@@ -286,7 +286,7 @@ export default function QuoteFormClient({ clients, materials, projects = [], pre
           docType: 'COTIZACIÓN',
           docId: initialQuote?.id || 'TEMP',
           notes: payload.notes,
-          sellerName: session?.user?.name || 'Aquatech',
+          sellerName: session?.user?.name || 'Software',
           action: 'instance',
           optionalSection: {
             title: optionalTitle,

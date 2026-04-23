@@ -110,7 +110,7 @@ export default function Footer() {
               <span>SÍGUENOS EN</span>
               <div style={{ display: 'flex', gap: '10px' }}>
                 <Link 
-                  href="https://www.facebook.com/aquariegoloja?locale=es_LA" 
+                  href="#" 
                   target="_blank" 
                   style={{ display: 'flex', alignItems: 'center', gap: '3px', color: '#424245', textDecoration: 'none' }} 
                   className="footer-sublink hover:text-[#0070C0] transition-colors"
@@ -118,7 +118,7 @@ export default function Footer() {
                   FB <ExternalLink size={10} />
                 </Link>
                 <Link 
-                  href="https://www.instagram.com/aquatech_loja/" 
+                  href="#" 
                   target="_blank" 
                   style={{ display: 'flex', alignItems: 'center', gap: '3px', color: '#424245', textDecoration: 'none' }} 
                   className="footer-sublink hover:text-[#0070C0] transition-colors"
@@ -128,9 +128,9 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Aquatech */}
+            {/* Software */}
             <div className="footer-col" style={{ flex: 'none' }}>
-              <span>Aquatech</span>
+              <span>Software</span>
               <div style={{ display: 'flex', gap: '6px', flexDirection: 'column' }}>
                 <Link href="/nosotros" className="footer-sublink hover:text-[#0070C0] transition-colors" style={{ color: '#424245', textDecoration: 'none' }}>Nosotros</Link>
                 <Link href="/preguntas" className="footer-sublink hover:text-[#0070C0] transition-colors" style={{ color: '#424245', textDecoration: 'none' }}>FAQ</Link>
@@ -148,21 +148,21 @@ export default function Footer() {
           {/* Logo + Brand */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', gap: '10px' }}>
             <div style={{ position: 'relative', width: '22px', height: '22px', overflow: 'hidden', backgroundColor: '#0070C0', padding: '2px' }}>
-              <Image src="/logo.jpg" alt="Aquatech" fill className="object-contain" sizes="22px" />
+              <Image src="/logo.jpg" alt="Software" fill className="object-contain" sizes="22px" />
             </div>
             <span style={{ fontSize: '15px', fontWeight: 800, color: '#000', letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
-              Aquatech
+              Software
             </span>
           </Link>
 
           {/* Copyright */}
           <p style={{ fontSize: '11px', color: '#86868b', fontWeight: 400, margin: 0, textAlign: 'center', lineHeight: 1.6 }}>
-            © {year} Aquatech Ecuador S.A. Todos los derechos reservados.
+            © {year} Software de Gestión. Todos los derechos reservados.
           </p>
 
           {/* Designer Credit */}
           <p style={{ fontSize: '10px', color: '#B0B0B5', fontWeight: 500, margin: 0, textAlign: 'center', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-            Diseñado por <Link href="https://www.cesarreyesjaramillo.com/" target="_blank" style={{ color: '#0070C0', textDecoration: 'none' }} className="hover:underline">Cesar Reyes</Link> | Aquatech {year}
+            Diseñado por <Link href="https://www.cesarreyesjaramillo.com/" target="_blank" style={{ color: '#0070C0', textDecoration: 'none' }} className="hover:underline">Cesar Reyes</Link> | Gestión {year}
           </p>
 
           {/* Legal Links */}

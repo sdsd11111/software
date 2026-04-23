@@ -1035,7 +1035,7 @@ export default function ProjectDetailClient({ project, availableOperators = [] }
       // Footer en cada página (opcional, aquí solo una vez al final)
       doc.setFontSize(9)
       doc.setTextColor(150, 150, 150)
-      doc.text('Este documento es un reporte generado automáticamente por el sistema Aquatech Field CRM.', 105, 285, { align: 'center' })
+      doc.text('Este documento es un reporte generado automáticamente por el sistema Software Field CRM.', 105, 285, { align: 'center' })
 
       doc.save(`Reporte_Proyecto_${project.id}_${project.title.replace(/\s+/g, '_')}.pdf`)
     } catch (err) {
@@ -1264,7 +1264,7 @@ export default function ProjectDetailClient({ project, availableOperators = [] }
         doc.setPage(i)
         doc.setFontSize(8)
         doc.setTextColor(160, 160, 160)
-        doc.text(`Aquatech CRM — Ficha de Proyecto #${fullProject.id}`, 20, 287)
+        doc.text(`Software CRM — Ficha de Proyecto #${fullProject.id}`, 20, 287)
         doc.text(`Página ${i} de ${pageCount}`, 175, 287)
       }
 

@@ -6,7 +6,7 @@ const BUNNY_PULLZONE_URL = process.env.BUNNY_PULLZONE_URL!
 export async function uploadToBunny(
   file: Buffer,
   filename: string,
-  folder: string = 'aquatech-crm'
+  folder: string = 'software-gestion'
 ): Promise<string> {
   const timestamp = Date.now()
   const path = `/${BUNNY_STORAGE_ZONE}/${folder}/${timestamp}-${filename}`

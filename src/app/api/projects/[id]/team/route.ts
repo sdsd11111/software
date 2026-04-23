@@ -69,7 +69,7 @@ export async function PUT(
         
         // WhatsApp
         if (user.phone) {
-          const message = `🚀 *Aquatech CRM*\nHola ${user.name},\nhas sido asignado al proyecto: *${title}*.\nPor favor, revisa la plataforma para más detalles.`;
+          const message = `🚀 *Gestión de Servicios*\nHola ${user.name},\nhas sido asignado al proyecto: *${title}*.\nPor favor, revisa la plataforma para más detalles.`;
           await sendWhatsAppMessage(user.phone, message).catch((e) => console.error('WA error', e));
         }
 

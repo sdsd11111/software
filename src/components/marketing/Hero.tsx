@@ -52,7 +52,7 @@ export default function Hero() {
             <source media="(max-width: 768px)" srcSet={slides[index].mobileImage} />
             <Image 
               src={slides[index].image} 
-              alt="Aquatech Slide" 
+              alt="Software Slide" 
               fill 
               unoptimized
               className="object-cover object-center"

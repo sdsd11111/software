@@ -53,10 +53,10 @@ export default function NavbarMobile() {
         className="flex items-center relative z-0"
       >
         <div className="relative w-[22px] h-[22px] overflow-hidden bg-[#0070C0] p-0.5" style={{ marginRight: '10px' }}>
-          <Image src="/logo.jpg" alt="Aquatech" fill className="object-contain" sizes="22px" />
+          <Image src="/logo.jpg" alt="Software" fill className="object-contain" sizes="22px" />
         </div>
         <span style={{ fontSize: '15px', fontWeight: 800, color: '#000', letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
-          Aquatech
+          Software
         </span>
       </Link>
 
@@ -152,7 +152,7 @@ export default function NavbarMobile() {
 
           {/* Footer of Menu */}
           <div className="mt-auto py-12 opacity-20 text-[10px] font-bold tracking-widest text-center uppercase border-t border-gray-50">
-            Aquatech Digital Ecosystem
+            Software Digital Ecosystem
           </div>
         </div>
       </div>

@@ -198,7 +198,7 @@ export default function Sidebar() {
       // Clear offline db immediately
       import('dexie').then((m) => {
         const Dexie = m.default;
-        Dexie.delete('AquatechOfflineDB').catch(() => {})
+        Dexie.delete('SoftwareOfflineDB').catch(() => {})
       }).catch(() => {})
       
       localStorage.clear()
@@ -227,8 +227,8 @@ export default function Sidebar() {
     return (
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`}>
         <div className="sidebar-brand">
-          <img src="/logo.jpg" alt="Aquatech" className="sidebar-brand-logo" />
-          <div className="sidebar-brand-text">A<span>Q</span>UATECH</div>
+          <img src="/logo.jpg" alt="Software" className="sidebar-brand-logo" />
+          <div className="sidebar-brand-text">S<span>O</span>FTWARE</div>
         </div>
         <div style={{ padding: '20px', color: 'var(--text-muted)', fontSize: '0.8rem' }}>Cargando...</div>
       </aside>
@@ -446,7 +446,7 @@ export default function Sidebar() {
           </svg>
         </button>
         <div className="mobile-header-title">
-          A<span>Q</span>UATECH
+          S<span>O</span>FTWARE
         </div>
       </div>
 
@@ -459,12 +459,12 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`}>
         <div className="sidebar-brand">
-          <img src="/logo.jpg" alt="Aquatech" className="sidebar-brand-logo" />
+          <img src="/logo.jpg" alt="Software" className="sidebar-brand-logo" />
           <div>
             <div className="sidebar-brand-text">
-              A<span>Q</span>UATECH
+              S<span>O</span>FTWARE
             </div>
-            <span className="sidebar-brand-sub">innovación hidráulica</span>
+            <span className="sidebar-brand-sub">gestión eficiente</span>
           </div>
         </div>
 

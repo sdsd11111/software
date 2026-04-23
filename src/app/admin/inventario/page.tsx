@@ -2,8 +2,8 @@ import { prisma } from '@/lib/prisma'
 import InventarioClient from './InventarioClient'
 
 export const metadata = {
-  title: 'Inventario - Aquatech CRM',
-  description: 'Gestión de materiales y suministros de Aquatech.',
+  title: 'Inventario - Software CRM',
+  description: 'Gestión de materiales y suministros de Software.',
 }
 
 export default async function InventarioPage() {

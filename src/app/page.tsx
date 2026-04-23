@@ -12,14 +12,14 @@ import ContactFAQ from '../components/marketing/ContactFAQ'
 
 // metadataBase is required in Next.js 14+ to resolve relative URLs for social sharing
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aquatech.com.ec'),
-  title: 'Aquatech | Piscinas, Hidromasajes y Riego en Loja',
-  description: 'Ingeniería hidráulica de vanguardia. Diseñamos y construimos piscinas, saunas y sistemas de riego premium en el sur del Ecuador.',
-  keywords: ['piscinas loja', 'hidromasajes ecuador', 'riego automatico loja', 'aquatech', 'saunas ecuador', 'construccion de piscinas'],
+  metadataBase: new URL('https://softwaregestion.com.ec'),
+  title: 'Software de Gestión para Empresas de Servicios | Piscinas, Hidromasajes y Riego en Loja',
+  description: 'Expertos en diseño, construcción y mantenimiento de piscinas, spas, saunas y sistemas de riego automatizado. Tecnología hidráulica de vanguardia.',
+  keywords: ['piscinas loja', 'hidromasajes ecuador', 'riego automatico loja', 'software gestion', 'saunas ecuador', 'construccion de piscinas'],
   openGraph: {
-    title: 'Aquatech | El Paraíso en tu Hogar',
-    description: 'Tecnología hidráulica para transformar tu espacio.',
-    images: ['/images/jacuzzi-spotlight.png'],
+    title: 'Software de Gestión para Empresas de Servicios | El Paraíso en tu Hogar',
+    description: 'Soluciones integrales en ingeniería hidráulica y wellness.',
+    images: ['/og-image.jpg'],
     type: 'website',
   }
 }

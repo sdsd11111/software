@@ -3,7 +3,7 @@ import { prisma } from './prisma'
 
 // Configure VAPID details
 webpush.setVapidDetails(
-  process.env.VAPID_SUBJECT || 'mailto:aquatech@cesarreyesjaramillo.com',
+  process.env.VAPID_SUBJECT || 'mailto:brand@cesarreyesjaramillo.com',
   process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
   process.env.VAPID_PRIVATE_KEY!
 )

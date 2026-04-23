@@ -10,7 +10,7 @@ import autoTable from 'jspdf-autotable'
 import { 
   generateProfessionalPDF, 
   generateProjectReportPDF, 
-  addAquatechHeader 
+  addProfessionalHeader 
 } from '@/lib/pdf-generator'
 import { useSession } from 'next-auth/react'
 import { formatToEcuador, ECUADOR_TIMEZONE, formatTimeEcuador, formatDateEcuador } from '@/lib/date-utils'
@@ -1234,7 +1234,7 @@ export default function ProjectExecutionClient({
       const doc = new jsPDF()
       
       // 1. Professional Header
-      addAquatechHeader(doc, 'FICHA TÉCNICA DE PROYECTO', `PROYECTO: ${project.title}`);
+      addProfessionalHeader(doc, 'FICHA TÉCNICA DE PROYECTO', `PROYECTO: ${project.title}`);
       
       doc.setFontSize(10);
       doc.setFont('helvetica', 'normal');
@@ -1243,7 +1243,7 @@ export default function ProjectExecutionClient({
       doc.text(`Fecha de Impresión: ${formatToEcuador(new Date(), { day: '2-digit', month: '2-digit', year: 'numeric' })}`, 145, 42);
 
       let y = 55
-      doc.setTextColor(0, 112, 192); // Aquatech Blue
+      doc.setTextColor(0, 112, 192); // Brand Blue
       doc.setFontSize(12);
       doc.setFont('helvetica', 'bold');
       doc.text('1. DATOS GENERALES', 20, y)

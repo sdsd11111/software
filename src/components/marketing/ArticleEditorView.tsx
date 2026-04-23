@@ -34,7 +34,7 @@ export default function ArticleEditorView({ article, pipelineId }: ArticleEditor
 
   return (
     <div style={{ padding: '2rem', background: 'var(--card-bg)', borderRadius: '12px', border: '2px solid var(--primary-color)' }}>
-      <h2 style={{ color: 'var(--primary-color)' }}>🛠 Modo Diagnóstico: Editor de Aquatech</h2>
+      <h2 style={{ color: 'var(--primary-color)' }}>🛠 Modo Diagnóstico: Editor de Software</h2>
       <p style={{ color: 'var(--text-muted)' }}>Si ves esto, el problema era la librería react-markdown. El editor está cargado correctamente.</p>
       
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '1rem' }}>

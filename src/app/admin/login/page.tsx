@@ -112,7 +112,7 @@ export default function LoginPage() {
         </div>
 
         <div className="login-brand" style={{ marginTop: '20px' }}>
-          <img src="/logo.jpg" alt="Aquatech" className="login-logo" />
+          <img src="/logo.jpg" alt="Software" className="login-logo" />
           <h1 className="login-title">
             A<span>Q</span>UATECH
           </h1>
@@ -177,7 +177,7 @@ export default function LoginPage() {
         </form>
 
         <p className="login-footer">
-          © 2026 Aquatech Loja — Todos los derechos reservados
+          © 2026 Software Loja — Todos los derechos reservados
         </p>
       </div>
 

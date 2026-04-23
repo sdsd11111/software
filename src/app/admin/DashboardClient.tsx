@@ -166,7 +166,7 @@ export default function DashboardClient({ stats, recentExpenses, recentMessages,
       {/* Page Header */}
       <div className="page-header">
         <h1 className="page-title">Dashboard</h1>
-        <p className="page-subtitle">Resumen general de Aquatech</p>
+        <p className="page-subtitle">Resumen general de Software</p>
       </div>
 
       {/* iOS Install Guide (Only if needed) */}

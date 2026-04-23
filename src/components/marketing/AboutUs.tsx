@@ -178,7 +178,7 @@ export default function AboutUs() {
               marginBottom: '40px',
               maxWidth: '540px'
             }}>
-              Con más de una década de experiencia, en Aquatech hemos perfeccionado el arte de llevar el paraíso a tu hogar. Nuestra infraestructura robusta con matriz y sucursales estratégicas nos permite ofrecer un respaldo único en el país.
+              Con más de una década de experiencia, en nuestra empresa hemos perfeccionado el arte de llevar el paraíso a tu hogar. Nuestra infraestructura robusta con matriz y sucursales estratégicas nos permite ofrecer un respaldo único en el país.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '48px' }}>

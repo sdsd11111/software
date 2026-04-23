@@ -88,7 +88,7 @@ export default function QuotesListClient({ initialQuotes, activeProjects = [] }:
             docType: 'COTIZACIÓN',
             docId: quote.id,
             notes: quote.notes,
-            sellerName: session?.user?.name || quote.creator?.name || 'Aquatech',
+            sellerName: session?.user?.name || quote.creator?.name || 'Software',
             action: 'instance'
           });
 

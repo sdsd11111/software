@@ -57,12 +57,12 @@ const GUIDES: Record<string, { titulo: string; pasos: string[] }> = {
     ]
   },
   iphone: {
-    titulo: 'Instala Aquatech para recibir notificaciones',
+    titulo: 'Instala la App para recibir notificaciones',
     pasos: [
       'Abre esta página en Safari (no Chrome)',
       'Toca el botón compartir (cuadrado con flecha)',
       'Toca "Agregar a pantalla de inicio"',
-      'Abre Aquatech desde el ícono y acepta los permisos',
+      'Abre la App desde el ícono y acepta los permisos',
     ]
   },
   android: {

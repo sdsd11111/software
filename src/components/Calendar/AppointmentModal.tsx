@@ -372,9 +372,9 @@ export default function AppointmentModal({
               {/* Columna Izquierda: Identidad y Ubicación */}
               <div className="modal-column">
                 <div className="form-group-compact">
-                  <label className="form-label-aquatech">Título de la Actividad</label>
+                  <label className="form-label-brand">Título de la Actividad</label>
                   <input 
-                    className="form-input-aquatech"
+                    className="form-input-brand"
                     type="text"
                     required
                     value={formData.title}
@@ -385,7 +385,7 @@ export default function AppointmentModal({
 
                 {isAdminView && (
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">Asignar Operadores</label>
+                    <label className="form-label-brand">Asignar Operadores</label>
                     <div className="operator-dropdown-wrapper">
                       <div className="operator-dropdown-trigger" onClick={() => !isEditing && setIsDropdownOpen(!isDropdownOpen)}>
                         {selectedOperatorIds.length === 0 ? 'Seleccionar operador...' : `${selectedOperatorIds.length} seleccionados`}
@@ -409,9 +409,9 @@ export default function AppointmentModal({
                 )}
 
                 <div className="form-group-compact">
-                  <label className="form-label-aquatech">Proyecto Relacionado</label>
+                  <label className="form-label-brand">Proyecto Relacionado</label>
                   <select 
-                    className="form-select-aquatech"
+                    className="form-select-brand"
                     value={formData.projectId}
                     onChange={e => setFormData({...formData, projectId: e.target.value})}
                   >
@@ -422,11 +422,11 @@ export default function AppointmentModal({
                   </select>
                 </div>
 
-                <div className="location-row-aquatech">
+                <div className="location-row-brand">
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">👤 Nombre del Cliente</label>
+                    <label className="form-label-brand">👤 Nombre del Cliente</label>
                     <input
-                      className="form-input-aquatech"
+                      className="form-input-brand"
                       type="text"
                       placeholder="Ej: Juan Pérez"
                       value={formData.clientName || ''}
@@ -434,9 +434,9 @@ export default function AppointmentModal({
                     />
                   </div>
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">📞 Número del Cliente</label>
+                    <label className="form-label-brand">📞 Número del Cliente</label>
                     <input
-                      className="form-input-aquatech"
+                      className="form-input-brand"
                       type="text"
                       placeholder="Ej: 099..."
                       value={formData.clientPhone || ''}
@@ -444,9 +444,9 @@ export default function AppointmentModal({
                     />
                   </div>
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">📍 Ubicación Cliente</label>
+                    <label className="form-label-brand">📍 Ubicación Cliente</label>
                     <input
-                      className="form-input-aquatech"
+                      className="form-input-brand"
                       type="text"
                       placeholder="Link Google Maps..."
                       value={formData.clientLocation || ''}
@@ -454,10 +454,10 @@ export default function AppointmentModal({
                     />
                   </div>
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">👷 Operario (GPS)</label>
+                    <label className="form-label-brand">👷 Operario (GPS)</label>
                     <button 
                       type="button" 
-                      className="btn-gps-aquatech" 
+                      className="btn-gps-brand" 
                       onClick={() => {
                         if (navigator.geolocation) {
                           navigator.geolocation.getCurrentPosition(pos => {
@@ -475,11 +475,11 @@ export default function AppointmentModal({
 
               {/* Columna Derecha: Tiempo, Multimedia y Notas */}
               <div className="modal-column">
-                <div className="time-row-aquatech">
+                <div className="time-row-brand">
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">Horario Inicio</label>
+                    <label className="form-label-brand">Horario Inicio</label>
                     <input 
-                      className="form-input-aquatech"
+                      className="form-input-brand"
                       type="datetime-local"
                       required
                       value={formData.startTime}
@@ -487,9 +487,9 @@ export default function AppointmentModal({
                     />
                   </div>
                   <div className="form-group-compact">
-                    <label className="form-label-aquatech">Horario Fin</label>
+                    <label className="form-label-brand">Horario Fin</label>
                     <input 
-                      className="form-input-aquatech"
+                      className="form-input-brand"
                       type="datetime-local"
                       required
                       value={formData.endTime}
@@ -499,11 +499,11 @@ export default function AppointmentModal({
                 </div>
 
                 <div className="form-group-compact">
-                  <label className="form-label-aquatech">📸 Adjuntos (Max 5MB)</label>
+                  <label className="form-label-brand">📸 Adjuntos (Max 5MB)</label>
                   <div className="attachment-actions-row">
                     <button 
                       type="button" 
-                      className="btn-attach-aquatech"
+                      className="btn-attach-brand"
                       onClick={() => {
                         const input = document.createElement('input')
                         input.type = 'file'
@@ -529,7 +529,7 @@ export default function AppointmentModal({
                     </button>
                     <button 
                       type="button" 
-                      className="btn-attach-aquatech"
+                      className="btn-attach-brand"
                       onClick={() => {
                         const input = document.createElement('input')
                         input.type = 'file'
@@ -555,7 +555,7 @@ export default function AppointmentModal({
                     </button>
                     <button 
                       type="button" 
-                      className="btn-attach-aquatech"
+                      className="btn-attach-brand"
                       onClick={() => document.getElementById('file-input-gallery')?.click()}
                     >
                       📁 Archivos
@@ -570,13 +570,13 @@ export default function AppointmentModal({
                     />
                   </div>
                   {formData.previews.length > 0 && (
-                    <div className="preview-gallery-aquatech" style={{ marginTop: '10px' }}>
+                    <div className="preview-gallery-brand" style={{ marginTop: '10px' }}>
                       {formData.previews.map((file, idx) => (
-                        <div key={idx} className="preview-item-aquatech">
+                        <div key={idx} className="preview-item-brand">
                           {file.type.startsWith('image/') ? (
                             <img src={file.url} alt="preview" />
                           ) : (
-                            <div className="preview-icon-aquatech">
+                            <div className="preview-icon-brand">
                               {file.type.startsWith('video/') ? '🎬' : 
                                file.type.startsWith('audio/') ? '🎙️' : '📄'}
                             </div>
@@ -596,11 +596,11 @@ export default function AppointmentModal({
                 </div>
 
                 <div className="form-group-compact">
-                  <div className="label-with-action-aquatech">
-                    <label className="form-label-aquatech">📝 Notas / Instrucciones</label>
+                  <div className="label-with-action-brand">
+                    <label className="form-label-brand">📝 Notas / Instrucciones</label>
                     <button 
                       type="button" 
-                      className={`btn-voice-aquatech ${isRecording ? 'recording' : ''}`}
+                      className={`btn-voice-brand ${isRecording ? 'recording' : ''}`}
                       onClick={toggleSpeechToText}
                       title={isRecording ? 'Detener dictado' : 'Dictar notas'}
                     >
@@ -608,7 +608,7 @@ export default function AppointmentModal({
                     </button>
                   </div>
                   <textarea 
-                    className="form-textarea-aquatech"
+                    className="form-textarea-brand"
                     value={formData.description}
                     onChange={e => setFormData({...formData, description: e.target.value})}
                     placeholder="Detalles..."
@@ -721,7 +721,7 @@ export default function AppointmentModal({
           gap: 8px;
         }
 
-        .form-label-aquatech {
+        .form-label-brand {
           color: #58c7ff; /* Celeste brillante exacto */
           font-size: 0.75rem;
           font-weight: 700;
@@ -729,7 +729,7 @@ export default function AppointmentModal({
           letter-spacing: 0.8px;
         }
 
-        .form-input-aquatech, .form-select-aquatech, .form-textarea-aquatech, .operator-dropdown-trigger {
+        .form-input-brand, .form-select-brand, .form-textarea-brand, .operator-dropdown-trigger {
           background: rgba(255,255,255,0.03); /* Fondo más suave como en el calendario */
           border: 1px solid rgba(255,255,255,0.1);
           border-radius: 8px;
@@ -741,7 +741,7 @@ export default function AppointmentModal({
           appearance: none; /* Eliminar estilo nativo para mayor control */
         }
 
-        .form-select-aquatech {
+        .form-select-brand {
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
           background-repeat: no-repeat;
           background-position: right 12px center;
@@ -749,30 +749,30 @@ export default function AppointmentModal({
           padding-right: 40px;
         }
 
-        .form-select-aquatech option {
+        .form-select-brand option {
           background-color: #010816; /* Forzar fondo oscuro en las opciones */
           color: white;
         }
 
-        .form-input-aquatech:focus, .form-select-aquatech:focus {
+        .form-input-brand:focus, .form-select-brand:focus {
           border-color: #58c7ff;
           background: rgba(255,255,255,0.05);
         }
 
-        .form-textarea-aquatech {
+        .form-textarea-brand {
           height: 80px;
           resize: none;
           overflow-y: auto;
         }
 
-        .label-with-action-aquatech {
+        .label-with-action-brand {
           display: flex;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 4px;
         }
 
-        .btn-voice-aquatech {
+        .btn-voice-brand {
           background: rgba(88, 199, 255, 0.1);
           border: 1px solid rgba(88, 199, 255, 0.3);
           color: #58c7ff;
@@ -787,7 +787,7 @@ export default function AppointmentModal({
           transition: all 0.2s;
         }
 
-        .btn-voice-aquatech.recording {
+        .btn-voice-brand.recording {
           background: rgba(255, 0, 0, 0.2);
           border-color: rgba(255, 0, 0, 0.5);
           color: #ff4d4d;
@@ -800,7 +800,7 @@ export default function AppointmentModal({
           100% { transform: scale(1); }
         }
 
-        .location-row-aquatech {
+        .location-row-brand {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 10px;
@@ -812,7 +812,7 @@ export default function AppointmentModal({
           box-sizing: border-box;
         }
 
-        .btn-gps-aquatech {
+        .btn-gps-brand {
           background: transparent;
           border: 1px solid #58c7ff;
           color: white;
@@ -824,13 +824,13 @@ export default function AppointmentModal({
           min-height: 45px;
         }
 
-        .time-row-aquatech {
+        .time-row-brand {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 16px;
         }
 
-        .upload-zone-aquatech {
+        .upload-zone-brand {
           border: 1px dashed rgba(255,255,255,0.2);
           padding: 12px;
           border-radius: 10px;
@@ -842,14 +842,14 @@ export default function AppointmentModal({
           justify-content: center;
           transition: all 0.2s;
         }
-        .upload-zone-aquatech:hover { background: rgba(255,255,255,0.02); border-color: #58c7ff; }
+        .upload-zone-brand:hover { background: rgba(255,255,255,0.02); border-color: #58c7ff; }
 
         .attachment-actions-row {
           display: flex;
           gap: 10px;
         }
 
-        .btn-attach-aquatech {
+        .btn-attach-brand {
           flex: 1;
           background: rgba(88, 199, 255, 0.08);
           border: 1px solid rgba(88, 199, 255, 0.25);
@@ -866,19 +866,19 @@ export default function AppointmentModal({
           gap: 6px;
         }
 
-        .btn-attach-aquatech:hover {
+        .btn-attach-brand:hover {
           background: rgba(88, 199, 255, 0.15);
           border-color: #58c7ff;
         }
 
-        .preview-gallery-aquatech {
+        .preview-gallery-brand {
           display: flex;
           flex-wrap: wrap;
           gap: 8px;
           width: 100%;
         }
 
-        .preview-item-aquatech {
+        .preview-item-brand {
           width: 50px;
           height: 50px;
           border-radius: 6px;
@@ -888,13 +888,13 @@ export default function AppointmentModal({
           border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .preview-item-aquatech img {
+        .preview-item-brand img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
 
-        .preview-icon-aquatech {
+        .preview-icon-brand {
           width: 100%;
           height: 100%;
           display: flex;
@@ -1018,32 +1018,32 @@ export default function AppointmentModal({
             width: 100%;
           }
           .form-group-compact { gap: 4px; width: 100%; }
-          .form-label-aquatech { font-size: 0.7rem; }
-          .form-input-aquatech, .form-select-aquatech, .operator-dropdown-trigger { 
+          .form-label-brand { font-size: 0.7rem; }
+          .form-input-brand, .form-select-brand, .operator-dropdown-trigger { 
             padding: 10px 12px; 
             font-size: 0.9rem; 
             width: 100%;
           }
-          .location-row-aquatech { 
+          .location-row-brand { 
             grid-template-columns: 1fr; /* Una sola columna para evitar cortes horizontales */
             gap: 12px; 
             padding: 12px; 
           }
-          .btn-gps-aquatech { 
+          .btn-gps-brand { 
             width: 100%;
             min-height: 44px; 
             padding: 10px; 
             font-size: 0.9rem; 
           }
-          .time-row-aquatech { 
+          .time-row-brand { 
             grid-template-columns: 1fr; 
             gap: 12px; 
           }
-          .upload-zone-aquatech { 
+          .upload-zone-brand { 
             padding: 12px; 
             min-height: 100px;
           }
-          .form-textarea-aquatech { min-height: 80px; }
+          .form-textarea-brand { min-height: 80px; }
           .modal-footer { 
             position: relative; 
             padding: 16px;

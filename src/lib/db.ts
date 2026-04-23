@@ -46,7 +46,7 @@ export class OfflineDatabase extends Dexie {
   clientsCache!: Table<ClientCache>;
 
   constructor() {
-    super('AquatechOfflineDB');
+    super('SoftwareOfflineDB');
     this.version(2).stores({
       outbox: '++id, projectId, status, timestamp',
       auth: 'id'

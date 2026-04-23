@@ -30,7 +30,7 @@ const faqs = [
   { q: "¿QUÉ TIPO DE ENERGÍA ES MEJOR PARA MI SAUNA?", a: "Depende estrictamente del volumen métrico del cuarto. Ofrecemos equipos generadores eléctricos compactos (ej. Emaux de 9KW) para tamaño residencial, o sistemas integrados a gas, ideales para establecimientos comerciales que alcanzan los 20m³ o más." },
   { q: "¿EL SAUNA INCLUYE LA CARPINTERÍA E INSTALACIÓN?", a: "Totalmente. Brindamos una solución 'llave en mano' que incorpora la madera, el correcto aislamiento térmico en paredes/techo, la instalación electromecánica y configuración del termostato." },
   { q: "¿TIENEN COBERTURA TÉCNICA EN ZONAS RURALES?", a: "Por supuesto, no solo construimos localmente. Contamos con delegaciones estratégicas que nos permiten desplegar personal a Loja, Malacatos, Vilcabamba, Yantzaza y otros cantones de toda la zona sur." },
-  { q: "¿QUÉ MANTENIMIENTO REQUIERE UNA CABINA SECA?", a: "El mantenimiento es mínimo comparado con áreas de vapor total. Aquatech provee el recambio de las piedras volcánicas, calibración de generadores, y mantenimiento a los controles digitales para seguridad del usuario." },
+  { q: "¿QUÉ MANTENIMIENTO REQUIERE UNA CABINA SECA?", a: "El mantenimiento es mínimo comparado con áreas de vapor total. Software provee el recambio de las piedras volcánicas, calibración de generadores, y mantenimiento a los controles digitales para seguridad del usuario." },
 ]
 
 export default function SaunasPage() {
@@ -57,7 +57,7 @@ export default function SaunasPage() {
         h1, h2, h3, h4, h5 { font-family: var(--font-brand) !important; }
         p, span, label, input, textarea { font-family: var(--font-body); }
         
-        .btn-aquatech {
+        .btn-brand {
           border-radius: 0px !important;
           border: 1px solid rgba(0,0,0,0.1);
           text-transform: uppercase;
@@ -67,7 +67,7 @@ export default function SaunasPage() {
           padding: 18px 40px;
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .btn-aquatech:hover {
+        .btn-brand:hover {
           background: #004A87;
           color: white;
           border-color: #004A87;
@@ -76,10 +76,10 @@ export default function SaunasPage() {
         
         /* Full Responsiveness Overrides */
         @media (max-width: 1024px) {
-          .aquatech-full-section {
+          .brand-full-section {
             flex-direction: column !important;
           }
-          .aquatech-work-left, .aquatech-work-right {
+          .brand-work-left, .brand-work-right {
              flex: 0 0 100% !important;
              width: 100% !important;
              min-width: 100% !important;
@@ -183,7 +183,7 @@ export default function SaunasPage() {
 
           <Link 
             href="#catalogo"
-            className="btn-aquatech bg-white text-black"
+            className="btn-brand bg-white text-black"
           >
             Ver Catálogo 2026
           </Link>
@@ -226,10 +226,10 @@ export default function SaunasPage() {
       </section>
 
       {/* Línea de Trabajo + Formulario (65/35 Full Width) */}
-      <section className="aquatech-full-section" style={{ width: '100%', display: 'flex', flexWrap: 'wrap', backgroundColor: '#ffffff', overflow: 'hidden' }}>
+      <section className="brand-full-section" style={{ width: '100%', display: 'flex', flexWrap: 'wrap', backgroundColor: '#ffffff', overflow: 'hidden' }}>
         
         {/* Lado Izquierdo: Línea de Trabajo (65%) */}
-        <div className="aquatech-work-left" style={{ 
+        <div className="brand-work-left" style={{ 
           flex: '0 0 60%', 
           backgroundColor: '#ffffff', 
           padding: '80px 60px', 
@@ -304,7 +304,7 @@ export default function SaunasPage() {
         </div>
 
         {/* Lado Derecho: Formulario Dinámico (35%) */}
-        <div className="aquatech-work-right" style={{ 
+        <div className="brand-work-right" style={{ 
           flex: '0 0 40%', 
           backgroundColor: '#004A87', 
           padding: '80px 40px', 

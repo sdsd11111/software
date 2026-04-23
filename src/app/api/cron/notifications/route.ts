@@ -65,7 +65,7 @@ export async function GET(request: Request) {
         }
 
         if (op.phone && op.appointments.length > 0) {
-          let summary = `📋 *Resumen del Día - Aquatech*\n\nHola *${op.name}*, hoy tienes *${op.appointments.length}* tareas asignadas:\n\n`;
+          let summary = `📋 *Resumen del Día - Software*\n\nHola *${op.name}*, hoy tienes *${op.appointments.length}* tareas asignadas:\n\n`;
           
           op.appointments.forEach((apt, idx) => {
             const time = formatTimeEcuador(apt.startTime);

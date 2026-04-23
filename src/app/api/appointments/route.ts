@@ -164,7 +164,7 @@ export async function POST(request: Request) {
               linksText += `\n\n🔊 *Audios (Respaldo):*\n${audioLinks.map((a: any) => `• [Escuchar Audio](${a.url})`).join('\n')}`;
             }
 
-            const message = `*Notificación Aquatech*\n\nHola ${appointment.user.name}, tienes una *nueva tarea* asignada:\n📌 *${title}*\n📅 Fecha: ${startDateLocale}\n⏰ Hora: ${startTimeLocale}${descrText}${nameClientText}${phoneClientText}${locClientText}${locOpText}${fileManifest}${linksText}\n\nConsulta más detalles en tu perfil.`;
+            const message = `*Notificación Software*\n\nHola ${appointment.user.name}, tienes una *nueva tarea* asignada:\n📌 *${title}*\n📅 Fecha: ${startDateLocale}\n⏰ Hora: ${startTimeLocale}${descrText}${nameClientText}${phoneClientText}${locClientText}${locOpText}${fileManifest}${linksText}\n\nConsulta más detalles en tu perfil.`;
 
             // Enviar mensaje de texto + adjuntos reales (imgs, audios, docs)
             await sendWhatsAppMessage(appointment.user.phone, message, attachments);
